@@ -222,14 +222,14 @@ export class Gigya {
                     return this._request<R>(endpoint, userParams, retries);
                 }
             }
-            throw e;
-        }
 
-        // Check for rate limiting.
-        if (response.errorCode === ErrorCode.RATE_LIMIT_HIT) {
-            // Try again after waiting.
-            await sleep(Gigya.RATE_LIMIT_SLEEP);
-            return this._request<R>(endpoint, userParams, retries);
+            // Check for rate limiting.
+            if (e.errorCode === ErrorCode.RATE_LIMIT_HIT) {
+                // Try again after waiting.
+                await sleep(Gigya.RATE_LIMIT_SLEEP);
+                return this._request<R>(endpoint, userParams, retries);
+            }
+            throw e;
         }
 
         // Ensure Gigya returned successful response. If not, throw error with details.
