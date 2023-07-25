@@ -1,6 +1,6 @@
 {
-  "name": "gigya",
-  "description": "Gigya SDK for NodeJS.",
+  "name": "@cambridge-pte/gigya",
+  "description": "Fork of Scott Hvestadt's Gigya SDK for NodeJS.",
   "keywords": [
     "gigya"
   ],
@@ -11,12 +11,8 @@
   },
   "maintainers": [
     {
-      "name": "Scott Hovestadt",
-      "email": "scott.hovestadt@gmail.com"
-    },
-    {
-      "name": "Baryo Bar Yosef",
-      "email": "baryo.stuff@gmail.com"
+      "name": "John Renzo Sunico",
+      "email": "jsunico@cambridge.org"
     }
   ],
   "scripts": {
@@ -25,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/scotthovestadt/gigya.git"
+    "url": "git@github.com:cambridge-pte/gigya.git"
   },
   "dependencies": {
     "@types/lodash": "^4.14.138",
@@ -44,9 +40,9 @@
   "typings": "dist/index",
   "readmeFilename": "README.md",
   "bugs": {
-    "url": "https://github.com/scotthovestadt/gigya/issues"
+    "url": "https://github.com/cambridge-pte/gigya/issues"
   },
-  "homepage": "https://github.com/scotthovestadt/gigya",
+  "homepage": "https://github.com/cambridge-pte/gigya",
   "devDependencies": {
     "typescript": "3.6.2"
   },
