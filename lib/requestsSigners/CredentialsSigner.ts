@@ -8,7 +8,7 @@ const strictUriEncode = require('strict-uri-encode') as (str: string) => string;
 interface SignedRequestParams {
     timestamp: number;
     nonce: number;
-    sig: string;
+    sig?: string;
 }
 
 export class CredentialsSigner extends SimpleRequestSigner {
@@ -32,7 +32,7 @@ export class CredentialsSigner extends SimpleRequestSigner {
             requestParams.nonce = this.createNonce();
             requestParams.sig =
                 this.createRequestSignature(
-                    this._creds.secret,
+                    this._creds.secret as string,
                     `https://${request.host.toLowerCase()}/${request.endpoint}`,
                     requestParams);
         }
