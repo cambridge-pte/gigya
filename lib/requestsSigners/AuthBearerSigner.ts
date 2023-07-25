@@ -2,7 +2,7 @@ import {GigyaRequest} from "../RequestFactory";
 import {AuthRequestSigner, isCredentials, UserKeyCredentials} from "./AuthRequestSigner";
 
 export interface RSACredentials extends UserKeyCredentials {
-    privateKey: string;
+    privateKey?: string;
 }
 
 export function isRSACreds(credentials: RSACredentials | any): credentials is RSACredentials {
