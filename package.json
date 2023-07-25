@@ -24,9 +24,9 @@
     "url": "git@github.com:cambridge-pte/gigya.git"
   },
   "dependencies": {
-    "@types/lodash": "^4.14.138",
-    "@types/node": "^12.7.3",
-    "@types/request": "^2.48.2",
+    "@types/lodash": "^4.14.195",
+    "@types/node": "^20.4.4",
+    "@types/request": "^2.48.8",
     "jose": "^1.17.1",
     "lodash": "^4.17.15",
     "request": "^2.79.0",
@@ -43,8 +43,8 @@
     "url": "https://github.com/cambridge-pte/gigya/issues"
   },
   "homepage": "https://github.com/cambridge-pte/gigya",
+  "license": "MIT",
   "devDependencies": {
-    "typescript": "3.6.2"
-  },
-  "license": "MIT"
+    "typescript": "^5.1.6"
+  }
 }
