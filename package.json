@@ -1,5 +1,5 @@
 {
-  "name": "gigya",
+  "name": "@cambridge-pte/gigya",
   "description": "Gigya SDK for NodeJS.",
   "keywords": [
     "gigya"
@@ -28,13 +28,14 @@
     "url": "git://github.com/scotthovestadt/gigya.git"
   },
   "dependencies": {
-    "@types/lodash": "^4.14.138",
-    "@types/node": "^12.7.3",
+    "@types/lodash": "^4.14.110",
+    "@types/node": "15.6.1",
     "@types/request": "^2.48.2",
     "jose": "^1.17.1",
     "lodash": "^4.17.15",
     "request": "^2.79.0",
-    "strict-uri-encode": "^2.0.0"
+    "strict-uri-encode": "^2.0.0",
+    "typescript": "3.5.3"
   },
   "files": [
     "dist",
