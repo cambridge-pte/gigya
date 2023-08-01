@@ -2,7 +2,7 @@ import {GigyaRequest} from "../RequestFactory";
 import {AuthRequestSigner, isCredentials, UserKeyCredentials} from "./AuthRequestSigner";
 
 export interface SecretCredentials extends UserKeyCredentials {
-    secret: string;
+    secret?: string;
 }
 
 export function isSecretCredentials(credentials: SecretCredentials | any): credentials is SecretCredentials {
