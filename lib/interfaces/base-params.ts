@@ -7,6 +7,7 @@ export interface BaseParamsSite {
 }
 
 export interface BaseParams extends BaseParamsSite {
+    V2?: boolean;
     apiKey?: string;
     oauth_token?: string;
 }
