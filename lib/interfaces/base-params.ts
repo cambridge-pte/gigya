@@ -9,6 +9,10 @@ export interface BaseParamsSite {
 export interface BaseParams extends BaseParamsSite {
     apiKey?: string;
     oauth_token?: string;
+    format?: string;
+    context?: string | object;
+    ignoreInterruptions?: boolean;
+    httpStatusCodes?: boolean;
 }
 
 export default BaseParams;

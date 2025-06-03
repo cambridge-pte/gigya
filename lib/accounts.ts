@@ -98,8 +98,8 @@ export class Accounts {
      *
      * @see http://developers.gigya.com/display/GD/accounts.getJWTPublicKey+REST
      */
-    public getJWTPublicKey(params?: BaseParams) {
-        return this.gigya.request<AccountsGetJWTPublicKeyResponse>('accounts.getJWTPublicKey', params);
+    public getJWTPublicKey(params?: BaseParams & AccountsGetJWTPublicKeyParams) {
+        return this.gigya.request<AccountsGetJWTPublicKeyResponse | { keys: AccountsGetJWTPublicKeyResponse[] }>('accounts.getJWTPublicKey', params);
     }
 
     /**
@@ -396,6 +396,10 @@ export interface AccountsGetCountersParams {
     UID?: string;
     regToken?: string;
     counters: Array<Counter>;
+}
+
+export interface AccountsGetJWTPublicKeyParams {
+    V2?: boolean;
 }
 
 export interface AccountsGetCountersResponse {
